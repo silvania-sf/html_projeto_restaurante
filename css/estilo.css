@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
 :root{
     --preto: black;
     --branco: white;
@@ -19,10 +21,10 @@
     padding: 0;
 }
 
-html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
+html{font-family: Arial, Helvetica, sans-serif; font-size: 1em; scroll-behavior: smooth;}
 
 header{
-    background-color: var(--corprojeto1); 
+    background: linear-gradient(var(--corprojeto6), var(--corprojeto1), var(--corprojeto1)); 
     color: var(--branco); 
     position: fixed;
     width: 100%;
@@ -35,7 +37,14 @@ a{text-decoration: none; color: var(--branco); font-weight: bold;}
 
 a:hover{color: var(--cinza);}
 
-footer{background-color: var(--preto); color: var(--branco); text-align: center;}
+footer{
+    background: linear-gradient(var(--corprojeto1), var(--corprojeto1), var(--corprojeto1), 
+      var(--corprojeto1), var(--corprojeto6)); 
+    color: var(--branco); 
+    text-align: center;
+    font-family: "Delius", cursive; 
+    font-weight: bold;
+}
 
 body{background-color: var(--cinza);}
 
@@ -57,9 +66,53 @@ aside{
     box-shadow: 1px 1px 5px 0px;
 }
 
+/* Configurações de links de produtos */
+.menu{
+    color: var(--branco);
+    background-color: var(--corprojeto1);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px var(--corprojeto6);
+    font-size: 1.4em;
+}
+
 /* Configurações de título */
-h1{font-size: 2.5em; margin-top: 3%;}
-h2{font-size: 1.5em;}
+h1{
+    font-size: 2.5em; 
+    margin-top: 1%;
+    text-align: center; 
+    color: var(--corprojeto1);
+    font-family: "Delius", cursive;
+    text-shadow: 1px 1px 1px var(--corprojeto6);
+}
+h2{
+    font-size: 1.7em; 
+    color: var(--corprojeto1); 
+    text-align: center; 
+    text-shadow: 1px 1px 1px var(--corprojeto6);
+    font-family: "Delius", cursive;
+}
+
+/* Configurações de títulos para dispositivos móveis */
+
+@media(min-width: 320px) and (max-width: 1024px){
+    h1{
+        font-size: 1em; 
+        margin-top: 1%;
+        text-align: center; 
+        color: var(--corprojeto1);
+        font-family: "Delius", cursive;
+        text-shadow: 1px 1px 1px var(--corprojeto6);
+    }
+    h2{
+        font-size: 1.3em; 
+        color: var(--corprojeto1); 
+        text-align: center; 
+        text-shadow: 1px 1px 1px var(--corprojeto6);
+        font-family: "Delius", cursive;
+    }
+}
+
 h3{font-size: 2em;}
 h4{font-size: 1em;}
 h1, h2, h3, h4, h5, h6{padding-top: 0.5%; padding-bottom: 0.5%;}
@@ -71,10 +124,15 @@ h1, h2, h3, h4, h5, h6{padding-top: 0.5%; padding-bottom: 0.5%;}
 
 /* Configurações de imagem */
 img{width: 100%; padding-top: 2%;}
-#topo{width: 400px; height: 130px; display: block; margin: auto;}
 
+#topo{width: 400px; height: 130px; display: block; margin: auto;}
 @media(min-width: 320px) and (max-width: 1024px){
     #topo{width: 340px; height: 100px; display: block; margin: auto;}    
+}
+
+#rodape{width: 150px; height: 150px; display: block; margin: auto;}
+@media(min-width: 320px) and (max-width: 1024px){
+    #topo{width: 100px; height: 100px; display: block; margin: auto;}    
 }
 
 /* Configurações de parágrafos */
@@ -88,23 +146,31 @@ p{padding-top: 1%; padding-bottom: 1%;}
 /* Configurações de separadores com Divs */
 .separador{margin-top: 10%;}
 .separador-conteudo{margin-top: 0.5%;}
+.separador-conteudo-opcoes{margin-top: 12%;}
 
  /* Configurações de divs para dispositivos móveis */
  @media(min-width: 320px) and (max-width: 1024px){
     .separador{margin-top: 30%;}
     .separador-conteudo{margin-top: 1%;}
+    .separador-conteudo-opcoes{margin-top: 30%;}    
  }
 
  /* Configurações do grid */
- #grid-conteudo{background-color: var(--cinza);}
+ .grid-conteudo{background-color: var(--branco); padding: 0.5%; font-family: "Delius", cursive;}
  .grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 1024px;
     margin: auto;
-    gap: 2px;
+    gap: 8px;
  }
- .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
+ .grid div{
+    background-color: var(--branco);
+    text-align: center; 
+    padding: 2px;
+    box-shadow: 1px 1px 1px 2px var(--corprojeto6);
+    border-radius: 20px;
+}
 
  /* Configurações para botão */
  button{
@@ -120,3 +186,28 @@ p{padding-top: 1%; padding-bottom: 1%;}
  }
 
  button:hover{background: var(--verdec); text-shadow: 1px 1px var(--preto);}
+
+ /* WhatsApp */
+ #whatsapp{
+    width: 100px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin: 5em;
+    font-family: "Delius", cursive;
+ }
+
+ @media(min-width: 320px) and (max-width: 1024px){
+    #whatsapp{
+        width: 70px;
+        height: 30px;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        margin: 5em;
+        margin-right: 10px;
+     }
+ }    

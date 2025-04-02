@@ -7,55 +7,89 @@
     <title>Restaurante do Bairro</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>
+<body> 
     <!-- Aqui é o topo do site -->
     <header>
-
         <img id="topo" src="img/topo.webp" alt="Restaurante Santiago">
          <!-- Aqui vamos inserir os links do site -->
         <nav>
-            <a href="#">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <a href="#refeicoes">Refeições</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#sobremesas">Sobremesas</a>
         </nav>
     </header>
-
+    <div id="whatsapp">
+        <p><strong>Faça seu pedido</strong></p>
+        <a href="https://wa.me/5569993887506?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido.">
+            <img src="img/whats.webp" alt="WhatsApp">
+        </a>    
+    </div>
+    <br> 
+    <a href="#" id="refeicoes"></a>     
+    <br>
+    <br>
     <br>
     <div class="separador"></div>
-    <br>
+    <br>    
     <main>
         <article>
-            <h1>Desenvolvimento Front-End: Curso completo e essencial</h1>
-            <h2>Aprenda com especialista e torne-se um(a) desenvolvedor(a) Front-End!</h2>   
+            <h1>As melhores refeições e sobremesas do seu bairro!</h1>
+            <br>
+            <h2>Refeições completas</h2>
 
-            <!--<button>Saiba mais</button>-->
-            <section id="grid-conteudo">
+            <section class="grid-conteudo">
                 <div class="grid">
-                    <div>Conteúdo1</div>
-                    <div>Conteúdo2</div>
-                    <div>Conteúdo3</div>
-                    <div>Conteúdo4</div>
-                    <div>Conteúdo5</div>
-                    <div>Conteúdo6</div>
+                    <div><a class="menu" href="#">Filé de frango</a><br><img src="img/prato1.webp" alt="Filé de frango"></div>
+                    <div><a class="menu" href="#">Estrogonofe de frango</a><br><img src="img/prato2.webp" alt="Estrogonofe de frango"></div>
+                    <div><a class="menu" href="#">Bife com batatas</a><br><img src="img/prato3.webp" alt="Bife com batatas"></div>
+                    <div><a class="menu" href="#">Lasanha</a><br><img src="img/prato4.webp" alt="Lasanha"></div>
+                    <div><a class="menu" href="#">Espaguete</a><br><img src="img/prato5.webp" alt="Espaguete"></div>
+                    <div><a class="menu" href="#">Vinagrete</a><br><img src="img/prato6.webp" alt="Vinagrete"></div>
+                </div>
+            </section>
+            <br>
+            <a href="#" id="bebidas"></a>
+            <br>
+            <div class="separador-conteudo-opcoes"></div>   
+            <br>         
+            <h2>Bebidas deliciosas</h2>
+            <br>
+            <section class="grid-conteudo">
+                <div class="grid">
+                    <div><a class="menu" href="#">Suco de laranja</a><br><img src="img/bebida1.webp" alt="Suco de laranja"></div>
+                    <div><a class="menu" href="#">Suco de acerola</a><br><img src="img/bebida2.webp" alt="Suco de acerola"></div>
+                    <div><a class="menu" href="#">Coca-cola ligth</a><br><img src="img/bebida3.webp" alt="Coca-cola ligth"></div>
+                    <div><a class="menu" href="#">Chá gelado</a><br><img src="img/bebida4.webp" alt="Chá gelado"></div>
+                    <div><a class="menu" href="#">Suco de morango</a><br><img src="img/bebida5.webp" alt="Suco de morango"></div>
+                    <div><a class="menu" href="#">Suco de uva</a><br><img src="img/bebida6.webp" alt="Suco de uva"></div>
+                </div>
+            </section>
+            <br>
+            <a href="#" id="sobremesas"></a>
+            <br>
+            <div class="separador-conteudo-opcoes"></div>
+            <br>           
+            <h2>Sobremesas que dão água na boca</h2>
+            <br>
+            <section class="grid-conteudo">
+                <div class="grid">
+                    <div><a class="menu" href="#">Bolo de chocolate</a><br><img src="img/sobremesa1.webp" alt="Bolo de chocolate"></div>
+                    <div><a class="menu" href="#">Brigadeiro</a><br><img src="img/sobremesa2.webp" alt="Brigadeiro"></div>
+                    <div><a class="menu" href="#">Cupcake</a><br><img src="img/sobremesa3.webp" alt="Cupcake"></div>
+                    <div><a class="menu" href="#">Cookies</a><br><img src="img/sobremesa4.webp" alt="Cookies"></div>
+                    <div><a class="menu" href="#">Pudim</a><br><img src="img/sobremesa5.webp" alt="Pudim"></div>
+                    <div><a class="menu" href="#">Sorvete</a><br><img src="img/sobremesa6.webp" alt="Sorvete"></div>
                 </div>
             </section>
         </article>    
     </main>
     <br>
     <div class="separador-conteudo"></div>
-    <br>
-    <br>
-    <div class="separador-conteudo"></div>
     <br>   
     <footer>
-        <h3>Silvania de Sousa Francisco</h3>
-        <h4>Desenvolvimento Front-End</h4>
-        <br>
-        <p>
-            Contato: email@email.com.br<br>
-            WhatsApp: (99) 99999-9999<br>
-            CNPJ: 00.000.000/00000-00<br>
-        </p> 
+        <img id="rodape" src="img/logo-rodape.webp" alt="Logotipo do rodapé">
+        <h3>Restaurante do bairro</h3>
+        <p>CNPJ: 00.000.000/00000-00</p>
     </footer>
 </body>
 </html>
