@@ -31,11 +31,11 @@ header{
     margin: 0;
 }
 
-nav{display: block; text-align: center; font-size: 1.3em; word-spacing: 10px;}
+nav{display: block; text-align: center; font-size: 1.3em; word-spacing: 40px;}
 
 a{text-decoration: none; color: var(--branco); font-weight: bold;}
 
-a:hover{color: var(--cinza);}
+a:hover{color: var(--corprojeto5);}
 
 footer{
     background: linear-gradient(var(--corprojeto1), var(--corprojeto1), var(--corprojeto1), 
@@ -71,7 +71,7 @@ aside{
     color: var(--branco);
     background-color: var(--corprojeto1);
     border-radius: 10px;
-    padding: 5px;
+    padding: 2px;
     box-shadow: 2px 2px 2px var(--corprojeto6);
     font-size: 1.4em;
 }
@@ -126,11 +126,13 @@ h1, h2, h3, h4, h5, h6{padding-top: 0.5%; padding-bottom: 0.5%;}
 img{width: 100%; padding-top: 2%;}
 
 #topo{width: 400px; height: 130px; display: block; margin: auto;}
+
 @media(min-width: 320px) and (max-width: 1024px){
     #topo{width: 340px; height: 100px; display: block; margin: auto;}    
 }
 
 #rodape{width: 150px; height: 150px; display: block; margin: auto;}
+
 @media(min-width: 320px) and (max-width: 1024px){
     #topo{width: 100px; height: 100px; display: block; margin: auto;}    
 }
@@ -150,13 +152,38 @@ p{padding-top: 1%; padding-bottom: 1%;}
 
  /* Configurações de divs para dispositivos móveis */
  @media(min-width: 320px) and (max-width: 1024px){
-    .separador{margin-top: 30%;}
+    .separador{margin-top: 32%;}
+    .separador-conteudo{margin-top: 1%;}
+    .separador-conteudo-opcoes{margin-top: 42%;}    
+ }
+
+ @media(min-width: 410px) and (max-width: 1024px){
+    .separador{margin-top: 20%;}
     .separador-conteudo{margin-top: 1%;}
     .separador-conteudo-opcoes{margin-top: 30%;}    
  }
 
+ @media(min-width: 540px) and (max-width: 1024px){
+    .separador{margin-top: 16%;}
+    .separador-conteudo{margin-top: 1%;}
+    .separador-conteudo-opcoes{margin-top: 25%;}    
+ }
+
+ @media(min-width: 760px) and (max-width: 1024px){
+    .separador{margin-top: 14%;}
+    .separador-conteudo{margin-top: 1%;}
+    .separador-conteudo-opcoes{margin-top: 17%;}    
+ }
+
+ @media(min-width: 1024px) and (max-width: 1366px){
+    .separador{margin-top: 10%;}
+    .separador-conteudo{margin-top: 1%;}
+    .separador-conteudo-opcoes{margin-top: 14%;}    
+ }
+
  /* Configurações do grid */
  .grid-conteudo{background-color: var(--branco); padding: 0.5%; font-family: "Delius", cursive;}
+ 
  .grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -164,13 +191,18 @@ p{padding-top: 1%; padding-bottom: 1%;}
     margin: auto;
     gap: 8px;
  }
+
  .grid div{
     background-color: var(--branco);
     text-align: center; 
     padding: 2px;
     box-shadow: 1px 1px 1px 2px var(--corprojeto6);
     border-radius: 20px;
+    margin-top: 10px;
 }
+
+.grid div img{height: 85%;}
+
 
  /* Configurações para botão */
  button{
@@ -189,13 +221,13 @@ p{padding-top: 1%; padding-bottom: 1%;}
 
  /* WhatsApp */
  #whatsapp{
-    width: 100px;
+    width: 70px;
     height: 50px;
     right: 0;
     bottom: 0;
     position: fixed;
     text-align: center;
-    margin: 5em;
+    margin: 4em;
     font-family: "Delius", cursive;
  }
 
